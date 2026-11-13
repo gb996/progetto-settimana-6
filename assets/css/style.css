@@ -1,4 +1,15 @@
+/* header*/
+nav{
+    background-color:  hsl(20, 20%, 15%) !important;
+  .nav-link {
+  color: hsl(20, 30%, 35%);
+  
+};
 
+};
+.navbar-toggler-icon{
+  border-color: hsl(20, 30%, 35%) !important;
+}
 /*hero*/
 #studio{
 background-color:  hsl(20, 30%, 35%);
@@ -13,16 +24,54 @@ button:hover{
 }
 
 /*sezione card*/
+#servizi{
 
-
+    .card{
+        box-shadow:  0 2px 6px rgba(0, 0, 0, 0.08) !important;
+    }
+.card:hover{  
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important; 
+}
+    
+}
 /*sezione contattaci*/
 #contatti{
     background-color: #F8F9FA;
     margin-top: 70px;
+     button{
+        background-color: #74503E; 
+        color: white;
+       
+    }
 }
 
 
 /*footer*/
 footer{
-    background-color: ;
+   background-color: hsl(20, 20%, 15%) !important;
+   
 }
+
+.footer-link:hover{
+  color: hsl(40, 30%, 90%) !important;
+}
+
+
+/*tema scuro*/
+
+[data-bs-theme="dark"] #contatti {
+  background-color: hsl(20, 15%, 13%);
+}
+
+[data-bs-theme="dark"] #contatti .form-control,
+[data-bs-theme="dark"] #contatti .form-select {
+  background-color: hsl(20, 15%, 18%) !important;
+  color: hsl(20, 10%, 88%) !important;
+  border-color: hsl(20, 15%, 25%);
+}
+
+/*facendo una ricerca ho scoperto che è
+ possibile modificare direttamente la classe
+  predefinita di bootstrap il che mi ha reso 
+  le personalizzazini piu facili. */ 
