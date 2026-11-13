@@ -1,3 +1,5 @@
+
+/*hero*/
 #studio{
 background-color:  hsl(20, 30%, 35%);
 
@@ -8,4 +10,19 @@ button:hover{
     background-color: hsl(20, 30%, 27%) ;
     color: white;
 }
+}
+
+/*sezione card*/
+
+
+/*sezione contattaci*/
+#contatti{
+    background-color: #F8F9FA;
+    margin-top: 70px;
+}
+
+
+/*footer*/
+footer{
+    background-color: ;
 }
