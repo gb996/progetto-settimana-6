@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function applicaTema(tema) {
     htmlEl.setAttribute('data-bs-theme', tema);
-    toggleBtn.textContent = tema === 'dark' ? '🌝' : '🌚';
+    toggleBtn.textContent = tema === 'dark' ? '🌞' : '🌚';
   }
 
   // === Toggle variante Deuteranopia ===

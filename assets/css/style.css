@@ -1,4 +1,12 @@
 /* header*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+
 nav{
     background-color:  hsl(20, 20%, 15%) !important;
   .nav-link {
@@ -117,20 +125,4 @@ footer{
 [data-theme="deuteranopia"] footer {
   background-color: #1a1a1a;
   color: #ffffff;
-}
-
-[data-theme="deuteranopia"] .badge.bg-success,
-[data-theme="deuteranopia"] .alert-success {
-  background-color: #0072B2 !important;
-  color: #ffffff !important;
-}
-[data-theme="deuteranopia"] .badge.bg-danger,
-[data-theme="deuteranopia"] .alert-danger {
-  background-color: #D55E00 !important;
-  color: #ffffff !important;
-}
-[data-theme="deuteranopia"] .badge.bg-warning,
-[data-theme="deuteranopia"] .alert-warning {
-  background-color: #E69F00 !important;
-  color: #1a1a1a !important;
 }
