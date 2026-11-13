@@ -6,11 +6,10 @@
 
 
 /* tema scuro*/
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const toggleBtn = document.getElementById('toggle-tema');
   const htmlEl = document.documentElement;
 
-  // Parte dalla preferenza di sistema (cambia in 'light' se vuoi un default fisso)
   const preferenzaSistema = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const temaIniziale = preferenzaSistema ? 'dark' : 'light';
 
@@ -24,6 +23,19 @@
 
   function applicaTema(tema) {
     htmlEl.setAttribute('data-bs-theme', tema);
-    toggleBtn.textContent = tema === 'dark' ? 'Tema chiaro' : 'Tema scuro';
+    toggleBtn.textContent = tema === 'dark' ? '🌝' : '🌚';
   }
+
+  // === Toggle variante Deuteranopia ===
+  const btnVariante = document.getElementById('toggle-variante');
+
+  btnVariante.addEventListener('click', function () {
+    const isAttivo = document.body.getAttribute('data-theme') === 'deuteranopia';
+
+    if (isAttivo) {
+      document.body.removeAttribute('data-theme');
+    } else {
+      document.body.setAttribute('data-theme', 'deuteranopia');
+    }
+  });
 });

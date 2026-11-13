@@ -71,7 +71,66 @@ footer{
   border-color: hsl(20, 15%, 25%);
 }
 
-/*facendo una ricerca ho scoperto che è
- possibile modificare direttamente la classe
+/*modifico direttamente la classe
   predefinita di bootstrap il che mi ha reso 
   le personalizzazini piu facili. */ 
+
+
+  /*tema per daltonismo(deuteranopia)*/
+[data-theme="deuteranopia"] .navbar.bg-dark {
+  background-color: #1a1a1a !important;
+}
+
+[data-theme="deuteranopia"] #studio {
+  background-color: #0072B2;
+}
+
+[data-theme="deuteranopia"] #studio .btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+[data-theme="deuteranopia"] #studio .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #0072B2;
+}
+
+[data-theme="deuteranopia"] body {
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+}
+
+[data-theme="deuteranopia"] #contatti .btn {
+  background-color: #0072B2;
+  color: #ffffff;
+}
+[data-theme="deuteranopia"] #contatti .btn:hover {
+  background-color: #005a8c;
+}
+
+[data-theme="deuteranopia"] .footer-link {
+  color: #ffffff;
+}
+[data-theme="deuteranopia"] .footer-link:hover {
+  color: #E69F00;
+}
+
+[data-theme="deuteranopia"] footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+[data-theme="deuteranopia"] .badge.bg-success,
+[data-theme="deuteranopia"] .alert-success {
+  background-color: #0072B2 !important;
+  color: #ffffff !important;
+}
+[data-theme="deuteranopia"] .badge.bg-danger,
+[data-theme="deuteranopia"] .alert-danger {
+  background-color: #D55E00 !important;
+  color: #ffffff !important;
+}
+[data-theme="deuteranopia"] .badge.bg-warning,
+[data-theme="deuteranopia"] .alert-warning {
+  background-color: #E69F00 !important;
+  color: #1a1a1a !important;
+}

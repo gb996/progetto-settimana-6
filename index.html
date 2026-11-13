@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" >
 
 <head>
   <meta charset="UTF-8">
@@ -9,31 +9,34 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body data-theme="deuteranopia">
 
   <header>
     <!-- Navbar Bootstrap (navbar-expand-md, sticky in cima) -->
      <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-      <div class="container">
+  <div class="container">
 
-        <a class="navbar-brand fw-bold " href="#">Atelier</a>
+    <a class="navbar-brand fw-bold" href="#">Atelier</a>
+<div class="btn-group order-md-2 ms-auto ms-md-0" role="group">
+  <button id="toggle-variante" type="button" class="btn border-0 rounded-circle">🎨</button>
+  <button id="toggle-tema" type="button" class="btn border-0 rounded-circle">Tema scuro</button>
+</div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
-          aria-controls="nav-menu" aria-expanded="false" aria-label="Apri menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+      aria-controls="nav-menu" aria-expanded="false" aria-label="Apri menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="nav-menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#prodotti">Studio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
-          </ul>
-          <button id="toggle-tema" type="button" class="btn btn-outline-light ms-md-2 mt-2 mt-md-0">Tema scuro</button>
-        </div>
+    <div class="collapse navbar-collapse" id="nav-menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#prodotti">Studio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servizi">Servizi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+      </ul>
+    </div>
 
-      </div>
-    </nav>
+  </div>
+</nav>
   </header>
 
   <section id="studio">
